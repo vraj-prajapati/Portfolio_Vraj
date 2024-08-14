@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="aboutme.css"> -->
+	<title>About Us</title>
+	<%- include('partials/header') %>
+</head>
+
+<body>
+    
+
+	<section class="about">
+		<h1>About me</h1>
+		<p style="font-weight: bold"> Vraj Prajapati </p>
+		<div class="about-info">
+			<div class="about-img">
+				<img src=
+"/images/profile.jpg" >
+			</div>
+			<div>
+	<p>I am currently pursuing a Bachelor's degree in Computer Science at Charusat University. My academic journey has equipped me with a solid foundation in various computer science concepts, including data structures, algorithms, software development, and more.
+		I have a deep love for programming and enjoy solving complex problems through code. My primary programming languages of expertise include C++,Python,Java and I am constantly expanding my skills by exploring new technologies and languages.
+	</p>
+				<!-- <button>Read More...</button> -->
+			</div>
+		</div>
+	</section>
+
+	<section class="team">
+		<h1>Skills</h1>
+		<div class="team-cards">
+			<!-- Cards here -->
+			<!-- Card 1 -->
+			<div class="card">
+				<div class="card-img">
+					<img src="/images\web-devel-important.jpg" >
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">Web-Development</h2>
+					<p class="card-role">MERN Stack</p>
+					<p class="card-email">HTML,CSS,JS,SQL</p>
+					<a href="https://github.com/vraj-prajapati" target="_blank">
+						<button class="button">View My GitHub</button>
+					</a>
+					
+				</div>
+			</div>
+
+			<!-- Card 2 -->
+			<div class="card">
+				<div class="card-img">
+					<img src="/images\programming.png" alt="User 2">
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">Programming</h2>
+					<p class="card-role">C++,Python,Java</p>
+					<p class="card-email">Proficient-C++</p>
+					<a href="https://www.linkedin.com/in/vraj-prajapati-4b6130232/" target="_blank">
+						<button class="button">linkedin</button>
+					</a>
+				</div>
+			</div>
+			<!-- Card 3 -->
+			<div class="card">
+				<div class="card-img">
+					<img src=
+"/images\ux.png" alt="User 3">
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">Machine Learning</h2>
+					<p class="card-role"> NLTK, NLP, Standard Ml Algorithms </p>
+					<p class="card-email">Data Science</p>
+					<a href="https://leetcode.com/u/21CS052_VRAJ/" target="_blank">
+						<button class="button">leetCode</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<h1 style="margin-top: 30px;">Resume</h1>
+		<div class="pdf">
+		<a href="/21CS052-Vraj_Resume.pdf" download="Vraj Prajapati-(Resume).pdf" style="text-decoration: none;color: white;">Download My Resume</a>
+		
+	</div>
+	</section>
+
+    <%- include('partials/footer') %>
+</body>
+
+</html>

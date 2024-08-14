@@ -1,0 +1,511 @@
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the navigation bar */
+nav {
+    background: linear-gradient(45deg, #9d2525, #f06595, #441fda);
+  color: #fff;
+  padding: 15px 0;
+
+  position: fixed; /* Fixed position */
+  top: 0; /* Stick it to the top */
+  width: 100%; /* Full width */
+  z-index: 100; /* Ensure it's above other content */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding-right: 50;
+  text-align:right;
+
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #020100;
+}
+.dropdown-header {
+    display: block;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    color: #6c757d;
+    white-space: nowrap;
+  }
+
+/* Style the header section */
+header {
+  text-align: right;
+  padding: 0 0;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 20px;
+}
+
+/* Style the main content */
+.main-content {
+  padding: 30px;
+}
+
+/* Style individual sections */
+.section {
+  margin-bottom: 40px;
+}
+
+
+/* Style the footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Style buttons */
+.button {
+  display: inline-block;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #ff3300;
+}
+.logo {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #40b736;
+}
+
+/* Style images */
+
+
+
+
+.about {
+	background: rgb(136, 144, 219);
+	background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(157, 154, 218) 100%);
+	padding: 100px 0 20px 0;
+	text-align: center;
+}
+
+.about h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.about p {
+	font-size: 1rem;
+	color: #323030;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.about-info {
+	margin: 2rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+}
+
+.about-img {
+	width: 20rem;
+	height: 20rem;
+
+}
+
+.about-img img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	object-fit: contain;
+}
+
+.about-info p {
+	font-size: 1.3rem;
+	margin: 0 2rem;
+	text-align: justify;
+}
+
+button {
+	border: none;
+	outline: 0;
+	padding: 10px;
+	margin: 2rem;
+	font-size: 1rem;
+	color: white;
+	background-color: #9896e7;
+	text-align: center;
+	cursor: pointer;
+	width: 15rem;
+	border-radius: 4px;
+}
+
+button:hover {
+	background-color: #1f9405;
+}
+
+/* Team Section */
+.team {
+	padding: 30px 0;
+	text-align: center;
+}
+
+.team h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.team-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.card {
+	background-color: white;
+	border-radius: 6px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	transition: transform 0.2s, box-shadow 0.2s;
+	width: 18rem;
+	height: 25rem;
+	margin-top: 10px;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+    width: 18rem;
+    height: 12rem;
+}
+ 
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.card-info button {
+	margin: 2rem 1rem;
+}
+
+.card-name {
+	font-size: 2rem;
+	margin: 10px 0;
+}
+
+.card-role {
+	font-size: 1rem;
+	color: #888;
+	margin: 5px 0;
+}
+
+.card-email {
+	font-size: 1rem;
+	color: #555;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: block;
+    }
+ 
+    .logo {
+        text-align: center;
+    }
+ 
+    .nav-links {
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+ 
+    .nav-links li {
+        margin-right: 0;
+    }
+ 
+    .about h1 {
+        font-size: 2rem;
+    }
+ 
+    .about p {
+        font-size: 0.9rem;
+    }
+ 
+    .about-info {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+    .about-img {
+        width: 60%;
+        height: 60%;
+        margin-bottom: 1rem;
+    }
+ 
+    .about-info p {
+        margin: 1rem 2rem;
+    }
+ 
+    .about-info button {
+        margin: 1rem 2rem;
+        width: 10rem;
+    }
+ 
+    .team {
+        margin: 0 1rem;
+    }
+}
+.project {
+	background: rgb(136, 144, 219);
+	background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(157, 154, 218) 100%);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px;
+    width: 700px;
+	margin-left:auto;
+	margin-right: auto;
+	/* margin-block: auto; */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+	justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Apply styles to buttons */
+.project-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+	
+    transition: background-color 0.3s ease-in-out;
+}
+
+.project-button:hover {
+    background-color: #555;
+}
+/* Apply styles to individual services */
+.service {
+	background: rgb(136, 144, 219);
+	background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(157, 154, 218) 100%);
+    border: 10px solid #cfb2b2;
+    border-radius: 10px;
+    padding: 30px;
+	margin-bottom: 10px;
+    width: 300px;
+    text-align: center;
+	margin-left:auto;
+	margin-right: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Apply styles to service icons */
+.service-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.reachUs-button {
+    padding: 1rem;
+    background-color: #0dac30;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.reachUs-button:hover{
+    background-color: #1ac840;
+}
+ 
+/* banner section styles */
+.banner {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+ 
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+/* Contact form styles */
+.contact-form {
+    padding: 40px 0;
+    margin: 0 10px;
+}
+ 
+.form-container {
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+.form-group {
+    margin-bottom: 20px;
+}
+ 
+.form-container label {
+    display:block;
+    font-weight: bold;
+}
+.form-container input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+.submit-button {
+    padding: 10px 20px;
+    background-color: #9e5ee7;
+    border: none;
+    color: rgb(255, 254, 254);
+    border-radius: 4px;
+    font-size: 1rem;
+	margin: auto;
+	align-items: center;
+    cursor: pointer;
+}
+ 
+/* Contact info styles */
+.contact-info {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+ 
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+/* Container for the round image */
+.image-container {
+    position: relative;
+	float: right;
+}
+
+/* Round image with animation */
+.round-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+	float: right;
+	/* margin-top: 40px; */
+	margin-right: 80px;
+	margin-top: -190px;
+	/* margin-bottom: auto; */
+    position: relative;
+    border: 10px solid #fff; /* You can customize the border color */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+
+    /* Animation */
+    animation: rotate 5s linear infinite; /* Rotate animation */
+}
+
+/* Image within the round container */
+.round-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.texth{
+	margin:auto;
+	/* text-overflow: ellipsis; */
+	margin-left: 150px;
+	margin-top: 200px;
+	font-size: 150%;
+}
+.pdf {
+    display: inline-block;
+    background-color: #7389da;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-bottom: 30px;
+   
+
+}
+
+.pdf:hover {
+    background-color: #838fd1;
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+  }
+  
+  body {
+    overflow-y: scroll; /* Always show vertical scroll bar */
+  }

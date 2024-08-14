@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <br>
+        <br>
+        <br>
+        <h1 style="text-align: center;">My Projects</h1>
+        
+        <section class="project">
+            
+            <h2>e-VAV- Online Voting and Volunteering System</h2>
+            <p>e-vav Is an online platform facilitating students to access information about all candidates running for the   
+                position of Class Representative (CR), cast their votes, and engage in volunteering activities.<br>
+                Created a dynamic vote counter to manage votes and responsive user interface for candidate and user.  </p>
+                <a href="https://github.com/vraj-prajapati" target="_blank">
+                    <button class="project-button">GitHub</button>
+                </a>
+        </section>
+        <section class="project">
+            <h2>Fake News Detection</h2>
+            <p>This Project involved utilizing Python, Beautiful Soup, Streamlit and machine learning algorithms to 
+                deploy a precise binary classification ML model, specifically Logistic Regression with accuracy of 89%.<br>
+                Implemented web-scrapping to fetch daily news API to show latest news. </p>
+            <a href="https://github.com/vraj-prajapati/Fake-News-Detection" target="_blank">
+                <button class="project-button">GitHub</button>
+            </a>
+        </section>
+        <section class="project">
+            <h2>Virtual Wheels – 3D Car Shop</h2>
+            <p>Developed a dynamic website showcasing 3D car models using the MERN stack. 
+                <br> Implemented features for users to purchase and manage cars, enhancing the overall user experience. 
+                <br>Utilized React for interactive UI components and Node.js for robust server-side operations. 
+                <br> Integrated MongoDB for efficient data management and Express.js for seamless API interactions. 
+                </p>
+            <a href="https://github.com/vraj-prajapati" target="_blank">
+                <button class="project-button">GitHub</button>
+            </a>    
+        </section>
+    </main>
+    
+        <!-- <form id="contact-form">
+            <h2>Contact Me</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" id="submit-button">Submit</button>
+        </form> -->
+        
+   
+    <%- include('partials/footer') %>
+</body>
+</html>
